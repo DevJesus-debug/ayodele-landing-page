@@ -16,6 +16,8 @@ header{
     width: 100%;
     height: 15vh;
     display: flex;
+    background-color: orange;
+    margin-bottom: 100px;
 }
 
 nav{
@@ -82,15 +84,23 @@ nav .links-cont button:hover{
 main{
     width: 100%;
     height: 900px;
+}
+
+main section{
+    width: 100%;
+    height: 100%;
     background-image: url("https://lh3.googleusercontent.com/PQQdKcg3E_K9V4ub0AAjHfjkObCaTQmWypXA6YYdZ6QN0xub1wrjFlMraNo-nic_r6cNOzd7fEJRkl_t7YC41Q=w1281");
     background-repeat: no-repeat;
     background-size: contain;
     background-position:center;
-    
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-.main-header{
+.main-content{
     background-color: blue;
+    position: absolute;
+    top: -50px;
     max-width: 1200px;
-    margin: 0 auto;
 }
