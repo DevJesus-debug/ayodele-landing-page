@@ -95,6 +95,7 @@ main{
 
 main .image-container{
     width: 100%;
+    max-width: 1440px;
     height: 100%;
     background-image: url("https://lh3.googleusercontent.com/PQQdKcg3E_K9V4ub0AAjHfjkObCaTQmWypXA6YYdZ6QN0xub1wrjFlMraNo-nic_r6cNOzd7fEJRkl_t7YC41Q=w1281");
     background-repeat: no-repeat;
