@@ -6,8 +6,9 @@
 
 :root{
     --headers-font: 'Forum', cursive;
+    --paragraph-font:'Tenor Sans', sans-serif;
+    --contact-buttons-color:rgb(144,110,71);
 }
-
 
 li{
     list-style: none;
@@ -17,10 +18,20 @@ a{
     text-decoration: none;
 }
 
+button{
+    border: solid 1px black;
+    background-color: white;
+    padding: 13px 20px;
+    text-transform: uppercase;
+}
+
 header{
     width: 100%;
     height: 15vh;
     display: flex;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
 }
 
 nav{
@@ -70,21 +81,22 @@ nav .links-cont ul li:hover{
 }
 
 nav .links-cont button{
-    border: solid 2px black;
-    background-color: white;
-    padding: 13px 20px;
     font-size: 1rem;
 }
 
 nav .links-cont button:hover{
     border: solid 2px black;
     background-color: black;
+    cursor: pointer;
     color: white;
 }
 
 /*main container*/
-
 main{
+    padding-top: 135px;
+}
+
+.banner-wrap{
     width: 100%;
     height: 1000px;
     position: relative;
@@ -93,7 +105,7 @@ main{
     justify-content: center;
 }
 
-main .image-container{
+.banner-wrap .image-container{
     width: 100%;
     max-width: 1440px;
     height: 100%;
@@ -103,7 +115,7 @@ main .image-container{
     background-position:0px -80px;
 }
 
-.main-content{
+.banner{
     position: absolute;
     top: 0;
     max-width: 1150px;
@@ -112,22 +124,64 @@ main .image-container{
     background-color: white;
 }
 
-.main-content h1{
+.banner h1{
     font-size: 3.3rem;
     margin-bottom: 40px;
     font-family:var(--headers-font);
     font-weight: 300;
 }
 
-.main-content p{
+.banner p{
     font-size:1.5rem;
     margin-bottom: 30px;
 }
 
-.main-content button{
+.banner button{
     border: none;
     font-size: 1.2rem;
-    background-color: rgb(144,110,71);
+    background-color: var(--contact-buttons-color);
     padding: 18px 20px;
     color: white;
+}
+
+article{
+    width: 100%;
+    max-width: 1150px;
+    height: 900px;
+    margin: 150px auto 80px;
+    background-image: url("https://lh3.googleusercontent.com/8YGTIE7eeU2EA3TZ3PGI2eqO5JeUW53gQB1_eYNeb1M9j8panlr3jskuJb1M_GbfXWo86uJRNt1jRM8Cs_tv3Q=w1281");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+article .text{
+    position: absolute;
+    background-color: white;
+    width: 47%;
+    top: 150px;
+    padding: 60px 50px 60px 25px;
+}
+
+article .text h1{
+   font-size:2.5rem;
+   font-family: var(--headers-font);
+   font-weight: 500;
+}
+
+article .text p{
+    margin:30px 0px;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: var(--paragraph-font);
+}
+
+
+article .img-cont{
+    position: absolute;
+    right: 0;
+    top: 55px;
+    padding:20px;
+    background-color: white;
 }
