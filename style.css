@@ -148,7 +148,7 @@ article{
     width: 100%;
     max-width: 1150px;
     height: 900px;
-    margin: 150px auto 80px;
+    margin: 150px auto 100px;
     background-image: url("https://lh3.googleusercontent.com/8YGTIE7eeU2EA3TZ3PGI2eqO5JeUW53gQB1_eYNeb1M9j8panlr3jskuJb1M_GbfXWo86uJRNt1jRM8Cs_tv3Q=w1281");
     background-position: center;
     background-size: contain;
@@ -184,4 +184,48 @@ article .img-cont{
     top: 55px;
     padding:20px;
     background-color: white;
+}
+
+
+.icon-section{
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon-section h2{
+    font-size: 2.7rem;
+    font-family: var(--headers-font);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin:60px 0;
+}
+
+.icon-section .cont-wrap{
+    display: flex;
+}
+
+.icon-section img{
+    width: 80px;
+}
+
+.icon-section .cont{
+    padding: 25px;
+}
+
+.icon-section .cont h3{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: var(--headers-font);
+    margin:20px 0;
+}
+
+.icon-section .cont p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--paragraph-font);
+    line-height: 25px;
+    margin:20px 0;
 }
