@@ -144,7 +144,7 @@ main{
     color: white;
 }
 
-article{
+.introduction-cont{
     width: 100%;
     max-width: 1150px;
     height: 900px;
@@ -229,3 +229,4 @@ article .img-cont{
     line-height: 25px;
     margin:20px 0;
 }
+
